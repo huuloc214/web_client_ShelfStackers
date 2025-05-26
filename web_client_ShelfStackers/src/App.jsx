@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import LoginScreen from "./component/LoginScreen";
 import RegisterScreen from "./component/RegisterScreen";
 import HomeScreen from "./component/homeScreen";
-import ProductDetail from "./component/ProductDetail"; 
+import { ProductDetail } from "./component/ProductDetail";  // import đúng
 
 export default function App() {
     return (
