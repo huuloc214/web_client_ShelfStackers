@@ -29,6 +29,8 @@
   padding: 8px;
   border-radius: 4px;
   border: none;
+  background-color: white;
+  color: black; /* sửa lỗi chữ trắng */
 }
 
 .form button {
@@ -48,10 +50,9 @@
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1200px; 
-  margin: 0 auto;     
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
 
 .column {
   flex: 1;
@@ -68,9 +69,8 @@
   background-color: #ccc;
   margin: 0 20px;
   height: auto;
-  align-self: stretch; 
+  align-self: stretch;
 }
-
 
 .socials i {
   margin-right: 10px;

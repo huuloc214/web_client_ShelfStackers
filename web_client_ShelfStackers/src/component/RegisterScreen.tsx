@@ -1,9 +1,12 @@
 import React from 'react';
-import '../styles/Login.css';
+import '../styles/Register.css';
+import { useNavigate } from 'react-router-dom';
 import ProductSuggestion from './ProductSuggestion';
 import Footer from './FooterLogin';
 
-export default function LoginScreen() {
+export default function RegisterScreen() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <header className="main-header">
@@ -38,15 +41,24 @@ export default function LoginScreen() {
         </div>
       </header>
 
-      <div className="login-wrapper" style={{ backgroundColor: 'white', padding: '20px', borderRadius: '10px' }}>
+      <div className="login-wrapper">
         <div className="login-tabs">
-          <span className="active">Đăng nhập</span>
-          <span>Đăng ký</span>
+          <span onClick={() => navigate('/login')}>Đăng nhập</span>
+          <span className="active">Đăng ký</span>
         </div>
 
         <div className="login-form">
-          <label>Số điện thoại/Email</label>
-          <input type="text" placeholder="Nhập số điện thoại hoặc email" />
+          <label>Số điện thoại</label>
+          <input type="text" placeholder="Nhập số điện thoại" />
+
+          <label>Chọn phương thức xác minh</label>
+          <div className="verification-methods">
+            <input type="text" placeholder="Tin nhắn SMS" />
+            <input type="text" placeholder="Zalo ZNS" />
+          </div>
+
+          <label>Mã xác thực OTP</label>
+          <input type="text" placeholder="Nhập mã OTP" />
 
           <label>Mật khẩu</label>
           <div className="password-field">
@@ -54,16 +66,12 @@ export default function LoginScreen() {
             <span className="show-password">Hiện</span>
           </div>
 
-          <div className="forgot-password">
-            <a href="#">Quên mật khẩu?</a>
-          </div>
-
-          <button className="login-button">Đăng nhập</button>
+          <button className="login-button">Đăng ký</button>
         </div>
       </div>
 
       <ProductSuggestion />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -22,10 +22,11 @@ export default function Footer() {
                     <p>60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam</p>
                     <p>Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi.</p>
                     <div className="socials">
-                        <i className="fa-brands fa-facebook"></i>
-                        <i className="fa-brands fa-instagram"></i>
-                        <i className="fa-brands fa-youtube"></i>
-                        <i className="fa-brands fa-tiktok"></i>
+                        <img src="/images/Facebook.png" className="fa-brands fa-facebook"></img>
+                        <img src="/images/Instagram.png" className="fa-brands fa-instagram"></img>
+                        <img src="/images/Youtube.png" className="fa-brands fa-youtube"></img>
+                        <img src="/images/twitter.png" className="fa-brands fa-tiktok"></img>
+                        <img src="/images/pinterest.png" className="fa-brands fa-tiktok"></img>
                     </div>
                 </div>
 
@@ -63,7 +64,7 @@ export default function Footer() {
                 <img src="/vnpay.png" alt="VNPAY" />
                 <img src="/momo.png" alt="Momo" />
                 <img src="/shopeepay.png" alt="ShopeePay" />
-                <img src="/zalopay.png" alt="ZaloPay" />
+                <img src="/Zalopay.png" alt="ZaloPay" />
             </div>
 
             {/* Footer note */}

@@ -10,6 +10,20 @@
       }
     ],
     "no-inline-styles": "off",
-    "button-type": "off"
+    "button-type": "off",
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "user-select"
+        ]
+      }
+    ]
   }
 }

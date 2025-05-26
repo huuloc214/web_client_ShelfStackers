@@ -1,22 +1,21 @@
-
 body {
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
 }
-
 
 .Imgbaner {
   width: 100%;
   display: block;
 }
 
-
 .header-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
-  background-color: #f8f8f8;
+  background-color: #d2919144;
 }
 
 /* Logo bên trái */
@@ -31,6 +30,7 @@ body {
   margin: 0 40px;
   display: flex;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .header-search input {
@@ -40,6 +40,8 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px 0 0 4px;
   outline: none;
+  background-color: #ffffff;
+  color: black; /* sửa lỗi chữ trắng */
 }
 
 .header-search button {
@@ -72,7 +74,7 @@ body {
   margin-bottom: 5px;
 }
 
-/* Các phần còn lại như mày đã có */
+/* Các phần còn lại */
 .login-wrapper {
   width: 300px;
   margin: 100px auto;
@@ -112,6 +114,8 @@ body {
   margin-bottom: 15px;
   box-sizing: border-box;
   border-radius: 6px;
+  background-color: #ffffff;
+  color: black; /* sửa lỗi chữ trắng */
 }
 
 .password-field {
@@ -123,7 +127,7 @@ body {
   top: 13px;
   right: 10px;
   font-size: 15px;
-  color: blue;
+  color: #007bff;
   cursor: pointer;
 }
 
