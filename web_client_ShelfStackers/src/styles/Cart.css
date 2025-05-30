@@ -1,0 +1,316 @@
+/* Phần khung tổng thể */
+.cart-container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  color: #000; /* Tất cả chữ màu đen */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+}
+
+/* Ảnh sản phẩm */
+.cart-item img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+/* Khối thông tin sản phẩm */
+.cart-item-details {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cart-item-details .price {
+  color: #d70018;
+  font-weight: bold;
+}
+
+/* Khối chọn số lượng và nút xóa */
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-item-actions button {
+  padding: 4px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Tổng thanh toán */
+.cart-summary {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 2px solid #aaa;
+  text-align: right;
+}
+
+.cart-summary p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.cart-summary .total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d70018;
+}
+
+/* Nút thanh toán */
+.checkout-button {
+  margin-top: 16px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #d70018;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.checkout-button:hover {
+  background-color: #b30014;
+}
+/* Khung 1: Chọn tất cả */
+.select-all-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Khung 2: Danh sách sản phẩm */
+.product-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: white;
+  gap: 20px;
+  color: #000;
+}
+
+.product-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.product-details {
+  flex-grow: 1;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-discounted {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.price-original {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.product-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white; /* Nền trắng */
+}
+
+.quantity-box button {
+  background-color: white; /* Nút trắng */
+  border: none;
+  padding: 4px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: gray; /* Dấu + - màu xám */
+}
+
+.quantity-box span {
+  padding: 4px 10px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.total-price {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Gộp 3 khung ngang hàng */
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Khung 3: Khuyến mãi */
+.promo-section {
+  flex: 1;
+  padding: 15px;
+  background-color: #fff7e6;
+  border: 1px solid #ffd699;
+  border-radius: 8px;
+  color: #000;
+}
+
+.promo-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.promo-detail {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.promo-progress {
+  background-color: #ddd;
+  border-radius: 4px;
+  height: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.promo-bar {
+  height: 100%;
+  background-color: orange;
+}
+
+.promo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-footer button {
+  background-color: #f05d40;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Khung 4: Nhận quà */
+.gift-section {
+  flex: 1;
+  padding: 15px;
+  background-color: #e6f9ff;
+  border: 1px solid #99e6ff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+
+.gift-title {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gift-section button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Khung 5: Tổng tiền + thanh toán */
+.summary-section {
+  flex: 1;
+  padding: 15px;
+  background-color: #fff;
+  border: 2px solid #f05d40;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #000;
+}
+
+.summary-section .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summary-total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f05d40;
+  margin-bottom: 10px;
+}
+
+.checkout-button {
+  width: 100%;
+  background-color: #f05d40;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}

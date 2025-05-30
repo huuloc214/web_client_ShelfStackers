@@ -23,27 +23,54 @@ export default function LoginScreen() {
         </div>
 
         <div className="header-bar">
-          <div className="header-logo">
+          {/* Logo */}
+          <div className="header-logo" onClick={() => navigate('/')}>
             <img src="/images/FahasaLogo.png" alt="Logo" />
           </div>
 
+          {/* Thanh tìm kiếm */}
           <div className="header-search">
             <input type="text" placeholder="Tìm kiếm sách..." />
             <button>Tìm kiếm</button>
           </div>
 
+          {/* Nhóm icon bên phải */}
           <div className="header-icons">
+            {/* Icon danh mục */}
+            <div
+              className="header-icon"
+              onClick={() => navigate('/category')}
+              title="Danh mục"
+              style={{ cursor: "pointer" }}
+            >
+              <img src="/images/grid-icon.png" alt="Category Icon" className="grid-icon" />
+              <span className="hover-link">Danh mục</span>
+            </div>
+
+            {/* Icon thông báo */}
             <div className="header-icon">
               <i className="fas fa-bell"></i>
-              <span>Thông báo</span>
+              <span className="hover-link">Thông báo</span>
             </div>
-            <div className="header-icon">
+
+            {/* Icon giỏ hàng */}
+            <div
+              className="header-icon"
+              onClick={() => navigate('/cart')}
+              style={{ cursor: "pointer" }}
+            >
               <i className="fas fa-shopping-cart"></i>
-              <span>Giỏ hàng</span>
+              <span className="hover-link">Giỏ hàng</span>
             </div>
-            <div className="header-icon">
+
+            {/* Icon tài khoản */}
+            <div
+              className="header-icon"
+              onClick={() => navigate('/profile')}
+              style={{ cursor: "pointer" }}
+            >
               <i className="fas fa-user"></i>
-              <span>Tài khoản</span>
+              <span className="hover-link">Tài khoản</span>
             </div>
           </div>
         </div>

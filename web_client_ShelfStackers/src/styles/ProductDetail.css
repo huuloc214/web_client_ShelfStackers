@@ -4,6 +4,7 @@
   background-color: #fff;
   box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
   font-family: Arial, sans-serif;
+  color: #222; /* chữ header mặc định đậm */
 }
 
 .banner {
@@ -23,6 +24,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
+  color: #222; /* chữ header bar đậm */
 }
 
 .header-logo img {
@@ -42,11 +44,17 @@
   border: 1px solid #ccc;
   border-radius: 3px 0 0 3px;
   font-size: 16px;
+  color: #333; /* chữ input đậm dễ nhìn */
+  background-color: #fff;
+}
+
+.header-search input[type="text"]::placeholder {
+  color: #999; /* placeholder nhạt hơn */
 }
 
 .header-search button {
   padding: 8px 15px;
-  background-color: #007bff;
+  background-color: #d32f2f; /* đỏ đậm hơn, hợp tone */
   border: none;
   color: white;
   font-weight: bold;
@@ -56,7 +64,7 @@
 }
 
 .header-search button:hover {
-  background-color: #0056b3;
+  background-color: #b71c1c;
 }
 
 .header-icons {
@@ -69,7 +77,7 @@
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  color: #333;
+  color: #222; /* màu chữ icon đậm */
   cursor: pointer;
   user-select: none;
 }
@@ -78,18 +86,19 @@
   font-size: 18px;
 }
 
-/* Thêm hiệu ứng hover cho icon */
 .header-icon:hover {
-  color: #007bff;
+  color: #d32f2f;
 }
 
-/* Product detail styles */
+
+/* Product detail */
 .product-detail {
   display: flex;
   gap: 40px;
   padding: 40px;
   background-color: #f6f6f6;
   flex-wrap: wrap;
+  color: #222; /* chữ trong chi tiết sp đậm */
 }
 
 .left-panel img {
@@ -110,11 +119,13 @@
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  color: #222; /* chữ trong box rõ */
 }
 
 .product-name h1 {
   font-size: 24px;
   margin: 0;
+  color: #111; /* tên sp thật đậm */
 }
 
 .product-price {
@@ -123,19 +134,20 @@
   gap: 15px;
   font-size: 20px;
   font-weight: bold;
+  color: #222;
 }
 
 .new-price {
-  color: red;
+  color: #d32f2f; /* đỏ nổi bật */
 }
 
 .old-price {
-  color: #999;
+  color: #777;
   text-decoration: line-through;
 }
 
 .discount {
-  color: green;
+  color: #388e3c;
   font-weight: bold;
 }
 
@@ -145,17 +157,26 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .btn-outline {
   background: #fff;
-  border: 2px solid red;
-  color: red;
+  border: 2px solid #d32f2f;
+  color: #d32f2f;
   margin-right: 10px;
 }
 
+.btn-outline:hover {
+  background: #f9eaea;
+}
+
 .btn-primary {
-  background: red;
+  background: #d32f2f;
   color: white;
   border: none;
+}
+
+.btn-primary:hover {
+  background: #b71c1c;
 }

@@ -1,0 +1,379 @@
+.checkout-container {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.section {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.section p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Mã Khuyến Mãi */
+.promo-section .promo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.promo-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.promo-section button {
+  padding: 10px 20px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.promo-section button:hover {
+  background: #1557b0;
+}
+
+.promo-section .promo-note {
+  font-size: 12px;
+  color: #666;
+}
+
+.promo-section .fas {
+  margin-left: 5px;
+  color: #1a73e8;
+}
+
+/* Nhận Quà */
+.gift-section .gift-info {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.gift-section .gift-icon {
+  margin-right: 5px;
+}
+
+.gift-section .gift-details {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.gift-section .gift-btn {
+  padding: 5px 10px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Thông Tin Khách Hàng */
+.customer-section .edit-btn {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.customer-section .edit-btn:hover {
+  text-decoration: underline;
+}
+
+/* Phương Thức Vận Chuyển */
+.shipping-section .shipping-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shipping-section input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.shipping-section .shipping-note {
+  font-size: 12px;
+  color: #e63946;
+}
+
+/* Phương Thức Thanh Toán */
+.payment-section .payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-section .payment-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-section .payment-method {
+  display: flex;
+  align-items: center;
+}
+
+.payment-section input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-section .payment-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.payment-section .payment-title {
+  font-size: 14px;
+  color: #333;
+}
+
+.payment-section .payment-discount {
+  font-size: 12px;
+  color: #e63946;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+.payment-section .payment-note {
+  font-size: 12px;
+  color: #e63946;
+  margin-top: 15px;
+}
+
+/* Kiểm Tra Lại Đơn Hàng */
+.order-section .cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.order-section img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.order-section .item-details {
+  flex: 1;
+}
+
+.order-section .item-details p {
+  margin: 2px 0;
+}
+
+.order-section .item-price {
+  font-weight: bold;
+  color: #333;
+}
+
+.order-section .item-quantity {
+  font-size: 12px;
+  color: #666;
+}
+
+.order-section .item-total {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tóm tắt và Nút Xác Nhận */
+.summary {
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #ccc;
+  color: #444;
+}
+
+.summary-item.total {
+  border-bottom: none;
+  font-size: 20px;
+  font-weight: 700;
+  background: #fff0f0;
+  padding: 12px;
+  border-radius: 8px;
+  color: #d62828;
+  margin-top: 15px;
+}
+
+.summary .summary-value {
+  font-weight: 600;
+}
+
+.summary .summary-note {
+  font-size: 13px;
+  color: #555;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px dashed #ccc;
+  text-align: center;
+  line-height: 1.5;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.summary .summary-note .fas {
+  margin-right: 6px;
+  color: #1a73e8;
+}
+
+.summary .summary-note a {
+  color: #1a73e8;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.confirm-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #e63946, #d62828);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(214, 40, 40, 0.3);
+}
+
+.confirm-button:hover {
+  background: linear-gradient(135deg, #d62828, #b71c1c);
+}
+
+
+/* Header */
+.main-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.banner {
+  text-align: center;
+}
+
+.Imgbaner {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.header-logo img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.header-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-search input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+.header-search button {
+  padding: 10px 20px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.header-search button:hover {
+  background: #1557b0;
+}
+
+.header-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.header-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-icon i {
+  font-size: 20px;
+  color: #333;
+}
+
+.hover-link {
+  font-size: 12px;
+  color: #666;
+}
+
+.header-icon:hover i,
+.header-icon:hover .hover-link {
+  color: #1a73e8;
+}
+
+.grid-icon {
+  width: 20px;
+  height: 20px;
+}

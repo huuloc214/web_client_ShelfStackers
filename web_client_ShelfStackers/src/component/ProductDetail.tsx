@@ -8,44 +8,70 @@ export const ProductDetail = () => {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div>
+      <header className="main-header">
+        <div className="banner">
+          <img src="/images/bannerBook.png" className="Imgbaner" alt="Banner giới thiệu sách" />
+        </div>
+
+        <div className="header-bar">
+          {/* Logo */}
+          <div className="header-logo" onClick={() => navigate('/')}>
+            <img src="/images/FahasaLogo.png" alt="Logo" />
+          </div>
+
+          {/* Thanh tìm kiếm */}
+          <div className="header-search">
+            <input type="text" placeholder="Tìm kiếm sách..." />
+            <button>Tìm kiếm</button>
+          </div>
+
+          {/* Nhóm icon bên phải */}
+          <div className="header-icons">
+            {/* Icon danh mục */}
+            <div
+              className="header-icon"
+              onClick={() => navigate('/category')}
+              title="Danh mục"
+              style={{ cursor: "pointer" }}
+            >
+              <img src="/images/grid-icon.png" alt="Category Icon" className="grid-icon" />
+              <span className="hover-link">Danh mục</span>
+            </div>
+
+            {/* Icon thông báo */}
+            <div className="header-icon">
+              <i className="fas fa-bell"></i>
+              <span className="hover-link">Thông báo</span>
+            </div>
+
+            {/* Icon giỏ hàng */}
+            <div
+              className="header-icon"
+              onClick={() => navigate('/cart')}
+              style={{ cursor: "pointer" }}
+            >
+              <i className="fas fa-shopping-cart"></i>
+              <span className="hover-link">Giỏ hàng</span>
+            </div>
+
+            {/* Icon tài khoản */}
+            <div
+              className="header-icon"
+              onClick={() => navigate('/profile')}
+              style={{ cursor: "pointer" }}
+            >
+              <i className="fas fa-user"></i>
+              <span className="hover-link">Tài khoản</span>
+            </div>
+          </div>
+        </div>
+      </header>
       <div>
-        <header className="main-header">
-          <div className="banner">
-            <img src="/images/bannerBook.png" className="Imgbaner" alt="Banner giới thiệu sách" />
-          </div>
-
-          <div className="header-bar">
-            <div className="header-logo">
-              <img src="/images/FahasaLogo.png" alt="Logo" />
-            </div>
-
-            <div className="header-search">
-              <input type="text" placeholder="Tìm kiếm sách..." />
-              <button>Tìm kiếm</button>
-            </div>
-
-            <div className="header-icons">
-              <div className="header-icon">
-                <i className="fas fa-bell"></i>
-                <span>Thông báo</span>
-              </div>
-              <div className="header-icon">
-                <i className="fas fa-shopping-cart"></i>
-                <span>Giỏ hàng</span>
-              </div>
-              <div className="header-icon" onClick={() => navigate('/login')} style={{ cursor: 'pointer' }}>
-                <i className="fas fa-user"></i>
-                <span>Tài khoản</span>
-              </div>
-            </div>
-          </div>
-        </header>
-
         <div className="product-detail">
           <div className="left-panel">
             <img
-              src="https://cdn0.fahasa.com/media/catalog/product/o/n/one-piece-tap-106---bia-1.jpg"
+              src="/images/book6.png"
               alt="One Piece 106"
             />
           </div>
@@ -85,6 +111,6 @@ export const ProductDetail = () => {
         <ProductSuggestion />
         <Footer />
       </div>
-    </>
+    </div>
   );
 };

@@ -1,0 +1,171 @@
+.user-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 280px;
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  border-right: 1px solid #ddd;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #888;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 12px 10px;
+  cursor: pointer;
+  color: #333;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.menu li:hover,
+.menu li.active {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+/* === Main content === */
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* === Summary section (info boxes) === */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.summary .item {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.summary .item p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.summary .item strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+  color: #222;
+}
+
+/* === Form section === */
+.form h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Gender */
+.form-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+.form-group label input[type="radio"] {
+  margin-right: 4px;
+  margin-left: 10px;
+}
+
+/* DOB */
+.dob {
+  display: flex;
+  gap: 10px;
+}
+
+.dob input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Submit button */
+.form button {
+  padding: 10px 25px;
+  background-color: #f05d40;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.form button:hover {
+  background-color: #d84a2f;
+}
